@@ -34,7 +34,7 @@ End Sub
 Function sendPost( url, jsonData, connTimeout, readTimeout)
     Dim responseString
     
-    Dim http : set http = Server.CreateObject("Msxml2.ServerXMLHTTP.3.0")
+    Dim http : set http = Server.CreateObject("Msxml2.ServerXMLHTTP.6.0")
     call http.Open("POST", url, False)
     call http.SetTimeouts(connTimeout, connTimeout, connTimeout, readTimeout)
     call http.SetRequestHeader("Content-Type", "application/json;charset=UTF-8")
