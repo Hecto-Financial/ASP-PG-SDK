@@ -49,7 +49,7 @@ noti.Add "csrcIssNo",       "" & request.Form("csrcIssNo")      '현금영수증
 noti.Add "cnclType",        "" & request.Form("cnclType")       '취소거래타입
 noti.Add "mchtParam",       "" & request.Form("mchtParam")      '기타주문정보
 noti.Add "pktHash",         "" & request.Form("pktHash")        '해쉬값
-noti.Add "acntType",         "" & request.Form("acnType")        '계좌구분
+noti.Add "acntType",         "" & request.Form("acntType")       '계좌구분
 noti.Add "kkmAmt",         "" & request.Form("kkmAmt")        '카카오머니 금액
 noti.Add "coupAmt",         "" & request.Form("coupAmt")        '쿠폰금액
 
