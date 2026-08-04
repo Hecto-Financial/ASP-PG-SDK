@@ -19,7 +19,7 @@ RES_PARAMS.Add "outRsltMsg",    "" & request.form("outRsltMsg")     '결과메�
 RES_PARAMS.Add "method",        "" & request.form("method")         '결제수단
 RES_PARAMS.Add "mchtTrdNo",     "" & request.form("mchtTrdNo")      '상점주문번호
 RES_PARAMS.Add "mchtCustId",    "" & request.form("mchtCustId")     '상점고객아이디
-RES_PARAMS.Add "trdNo",         "" & request.form("trdNo")          '세틀뱅크거래번호
+RES_PARAMS.Add "trdNo",         "" & request.form("trdNo")          '헥토파이낸셜거래번호
 RES_PARAMS.Add "trdAmt",        "" & request.form("trdAmt")         '거래금액
 RES_PARAMS.Add "mchtParam",     "" & request.form("mchtParam")      '상점예약필드
 RES_PARAMS.Add "authDt",        "" & request.form("authDt")         '승인일시
@@ -75,7 +75,7 @@ call log_message(LOG_FILE, logStr)
 
 %>
 <html>
-<head><title>S'Pay 결제 결과 페이지</title>
+<head><title>헥토파이낸셜 결제 결과 페이지</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <style type="text/css">

@@ -47,7 +47,7 @@ RES_PARAMS.params.set "method", ""      '결제수단
 RES_PARAMS.params.set "bizType", ""     '업무구분
 RES_PARAMS.params.set "encCd", ""       '암호화구분
 RES_PARAMS.params.set "mchtTrdNo", ""   '상점주문번호
-RES_PARAMS.params.set "trdNo", ""       '세틀뱅크거래번호
+RES_PARAMS.params.set "trdNo", ""       '헥토파이낸셜거래번호
 RES_PARAMS.params.set "trdDt", ""       '요청일자
 RES_PARAMS.params.set "trdTm", ""       '요청시간
 RES_PARAMS.params.set "outStatCd", ""   '결과코드
@@ -172,7 +172,7 @@ if resData.get("params") <> "" then
     RES_PARAMS.params.set "bizType", resData.params.get("bizType")          '업무구분
     RES_PARAMS.params.set "encCd", resData.params.get("encCd")              '암호화구분
     RES_PARAMS.params.set "mchtTrdNo", resData.params.get("mchtTrdNo")      '상점주문번호
-    RES_PARAMS.params.set "trdNo", resData.params.get("trdNo")              '세틀뱅크거래번호
+    RES_PARAMS.params.set "trdNo", resData.params.get("trdNo")              '헥토파이낸셜거래번호
     RES_PARAMS.params.set "trdDt", resData.params.get("trdDt")              '요청일자
     RES_PARAMS.params.set "trdTm", resData.params.get("trdTm")              '요청시간
     RES_PARAMS.params.set "outStatCd", resData.params.get("outStatCd")      '결과코드
@@ -265,7 +265,7 @@ On Error GoTo 0
             <td class="right"><%= RES_PARAMS.params.get("mchtTrdNo") %></td>
         </tr>
         <tr>
-            <td class="left">trdNo[세틀뱅크 거래번호]</td>
+            <td class="left">trdNo[헥토파이낸셜 거래번호]</td>
             <td class="right"><%= RES_PARAMS.params.get("trdNo") %></td>
         </tr>
         <tr>

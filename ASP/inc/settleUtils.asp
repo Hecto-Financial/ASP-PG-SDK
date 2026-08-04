@@ -30,7 +30,7 @@ End Sub
 '@param jsonData : JSON request data 
 '@param connTimeout : resolve, connect, send timeout
 '@param readTimeout : receive timeout
-'@return responseString : JSON from settlebank
+'@return responseString : JSON from Hecto Financial
 Function sendPost( url, jsonData, connTimeout, readTimeout)
     Dim responseString
     

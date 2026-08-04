@@ -16,7 +16,7 @@ Dim outRsltMsg : outRsltMsg             = "" & request.Form("respOutRsltMsg")   
 Dim method : method                     = "" & request.Form("respMethod")           '결제수단
 Dim mchtTrdNo : mchtTrdNo               = "" & request.Form("respMchtTrdNo")        '상점주문번호
 Dim mchtCustId : mchtCustId             = "" & request.Form("respMchtCustId")       '상점고객아이디
-Dim trdNo : trdNo                       = "" & request.Form("respTrdNo")            '세틀뱅크 거래번호
+Dim trdNo : trdNo                       = "" & request.Form("respTrdNo")            '헥토파이낸셜 거래번호
 Dim trdAmt : trdAmt                     = "" & request.Form("respTrdAmt")           '거래금액
 Dim mchtParam : mchtParam               = "" & request.Form("respMchtParam")        '상점예약필드
 Dim authDt : authDt                     = "" & request.Form("respAuthDt")           '승인일시
@@ -38,7 +38,7 @@ Dim csrcAmt : csrcAmt                   = "" & request.Form("respCsrcAmt")      
 <head>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>S'Pay 결제 결과 페이지</title>
+<title>헥토파이낸셜 결제 결과 페이지</title>
 <style type="text/css">
     body            {font-family:굴림; font-size:10pt; color:#000000; text-decoration:none;}
     font            {font-family:굴림; font-size:10pt; color:#000000; text-decoration:none;}
@@ -86,7 +86,7 @@ Dim csrcAmt : csrcAmt                   = "" & request.Form("respCsrcAmt")      
             <td class="right"><%= mchtCustId %></td>
         </tr>
         <tr>
-            <td class="left">trdNo[세틀뱅크거래번호]</td>
+            <td class="left">trdNo[헥토파이낸셜거래번호]</td>
             <td class="right"><%= trdNo %></td>
         </tr>
         <tr>
