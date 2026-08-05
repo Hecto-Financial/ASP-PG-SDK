@@ -94,30 +94,30 @@ call log_message(LOG_FILE, logStr)
 <script>
 //결제 결과 세팅
 var _PAY_RESULT = {
-    mchtId :        "<%= RES_PARAMS.Item("mchtId") %>",
-    outStatCd :     "<%= RES_PARAMS.Item("outStatCd") %>",
-    outRsltCd :     "<%= RES_PARAMS.Item("outRsltCd") %>",
-    outRsltMsg :    "<%= RES_PARAMS.Item("outRsltMsg") %>",
-    method :        "<%= RES_PARAMS.Item("method") %>",
-    mchtTrdNo :     "<%= RES_PARAMS.Item("mchtTrdNo") %>",
-    mchtCustId :    "<%= RES_PARAMS.Item("mchtCustId") %>",
-    trdNo :         "<%= RES_PARAMS.Item("trdNo") %>",
-    trdAmt :        "<%= RES_PARAMS.Item("trdAmt") %>",
-    mchtParam :     "<%= RES_PARAMS.Item("mchtParam") %>",
-    authDt :        "<%= RES_PARAMS.Item("authDt") %>",
-    authNo :        "<%= RES_PARAMS.Item("authNo") %>",
-    reqIssueDt :    "<%= RES_PARAMS.Item("reqIssueDt") %>",
-    intMon :        "<%= RES_PARAMS.Item("intMon") %>",
-    fnNm :          "<%= RES_PARAMS.Item("fnNm") %>",
-    fnCd :          "<%= RES_PARAMS.Item("fnCd") %>",
-    pointTrdNo :    "<%= RES_PARAMS.Item("pointTrdNo") %>",
-    pointTrdAmt :   "<%= RES_PARAMS.Item("pointTrdAmt") %>",
-    cardTrdAmt :    "<%= RES_PARAMS.Item("cardTrdAmt") %>",
-    vtlAcntNo :     "<%= RES_PARAMS.Item("vtlAcntNo") %>",
-    expireDt :      "<%= RES_PARAMS.Item("expireDt") %>",
-    cphoneNo :      "<%= RES_PARAMS.Item("cphoneNo") %>",
-    billKey :       "<%= RES_PARAMS.Item("billKey") %>",
-    csrcAmt :       "<%= RES_PARAMS.Item("csrcAmt") %>"
+    mchtId :        "<%= EscapeJs(RES_PARAMS.Item("mchtId")) %>",
+    outStatCd :     "<%= EscapeJs(RES_PARAMS.Item("outStatCd")) %>",
+    outRsltCd :     "<%= EscapeJs(RES_PARAMS.Item("outRsltCd")) %>",
+    outRsltMsg :    "<%= EscapeJs(RES_PARAMS.Item("outRsltMsg")) %>",
+    method :        "<%= EscapeJs(RES_PARAMS.Item("method")) %>",
+    mchtTrdNo :     "<%= EscapeJs(RES_PARAMS.Item("mchtTrdNo")) %>",
+    mchtCustId :    "<%= EscapeJs(RES_PARAMS.Item("mchtCustId")) %>",
+    trdNo :         "<%= EscapeJs(RES_PARAMS.Item("trdNo")) %>",
+    trdAmt :        "<%= EscapeJs(RES_PARAMS.Item("trdAmt")) %>",
+    mchtParam :     "<%= EscapeJs(RES_PARAMS.Item("mchtParam")) %>",
+    authDt :        "<%= EscapeJs(RES_PARAMS.Item("authDt")) %>",
+    authNo :        "<%= EscapeJs(RES_PARAMS.Item("authNo")) %>",
+    reqIssueDt :    "<%= EscapeJs(RES_PARAMS.Item("reqIssueDt")) %>",
+    intMon :        "<%= EscapeJs(RES_PARAMS.Item("intMon")) %>",
+    fnNm :          "<%= EscapeJs(RES_PARAMS.Item("fnNm")) %>",
+    fnCd :          "<%= EscapeJs(RES_PARAMS.Item("fnCd")) %>",
+    pointTrdNo :    "<%= EscapeJs(RES_PARAMS.Item("pointTrdNo")) %>",
+    pointTrdAmt :   "<%= EscapeJs(RES_PARAMS.Item("pointTrdAmt")) %>",
+    cardTrdAmt :    "<%= EscapeJs(RES_PARAMS.Item("cardTrdAmt")) %>",
+    vtlAcntNo :     "<%= EscapeJs(RES_PARAMS.Item("vtlAcntNo")) %>",
+    expireDt :      "<%= EscapeJs(RES_PARAMS.Item("expireDt")) %>",
+    cphoneNo :      "<%= EscapeJs(RES_PARAMS.Item("cphoneNo")) %>",
+    billKey :       "<%= EscapeJs(RES_PARAMS.Item("billKey")) %>",
+    csrcAmt :       "<%= EscapeJs(RES_PARAMS.Item("csrcAmt")) %>"
 };
 
 //main으로 결과 전달
@@ -142,99 +142,99 @@ function sendResult()
     <table>
         <tr>
             <td class="left">mchtId</td>
-            <td class="right"><%= RES_PARAMS.Item("mchtId") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("mchtId")) %></td>
         </tr>
         <tr>
             <td class="left">outStatCd</td>
-            <td class="right"><%= RES_PARAMS.Item("outStatCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("outStatCd")) %></td>
         </tr>
         <tr>
             <td class="left">outRsltCd</td>
-            <td class="right"><%= RES_PARAMS.Item("outRsltCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("outRsltCd")) %></td>
         </tr>
         <tr>
             <td class="left">outRsltMsg</td>
-            <td class="right"><%= RES_PARAMS.Item("outRsltMsg") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("outRsltMsg")) %></td>
         </tr>
         <tr>
             <td class="left">method</td>
-            <td class="right"><%= RES_PARAMS.Item("method") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("method")) %></td>
         </tr>
         <tr>
             <td class="left">mchtTrdNo</td>
-            <td class="right"><%= RES_PARAMS.Item("mchtTrdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("mchtTrdNo")) %></td>
         </tr>
         <tr>
             <td class="left">mchtCustId</td>
-            <td class="right"><%= RES_PARAMS.Item("mchtCustId") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("mchtCustId")) %></td>
         </tr>
         <tr>
             <td class="left">trdNo</td>
-            <td class="right"><%= RES_PARAMS.Item("trdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("trdNo")) %></td>
         </tr>
         <tr>
             <td class="left">trdAmt</td>
-            <td class="right"><%= RES_PARAMS.Item("trdAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("trdAmt")) %></td>
         </tr>
         <tr>
             <td class="left">mchtParam</td>
-            <td class="right"><%= RES_PARAMS.Item("mchtParam") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("mchtParam")) %></td>
         </tr>
         <tr>
             <td class="left">authDt</td>
-            <td class="right"><%= RES_PARAMS.Item("authDt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("authDt")) %></td>
         </tr>
         <tr>
             <td class="left">authNo</td>
-            <td class="right"><%= RES_PARAMS.Item("authNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("authNo")) %></td>
         </tr>
         <tr>
             <td class="left">reqIssueDt</td>
-            <td class="right"><%= RES_PARAMS.Item("reqIssueDt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("reqIssueDt")) %></td>
         </tr>
         <tr>
             <td class="left">intMon</td>
-            <td class="right"><%= RES_PARAMS.Item("intMon") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("intMon")) %></td>
         </tr>
         <tr>
             <td class="left">fnNm</td>
-            <td class="right"><%= RES_PARAMS.Item("fnNm") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("fnNm")) %></td>
         </tr>
         <tr>
             <td class="left">fnCd</td>
-            <td class="right"><%= RES_PARAMS.Item("fnCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("fnCd")) %></td>
         </tr>
         <tr>
             <td class="left">pointTrdNo</td>
-            <td class="right"><%= RES_PARAMS.Item("pointTrdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("pointTrdNo")) %></td>
         </tr>
         <tr>
             <td class="left">pointTrdAmt</td>
-            <td class="right"><%= RES_PARAMS.Item("pointTrdAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("pointTrdAmt")) %></td>
         </tr>
         <tr>
             <td class="left">cardTrdAmt</td>
-            <td class="right"><%= RES_PARAMS.Item("cardTrdAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("cardTrdAmt")) %></td>
         </tr>
         <tr>
             <td class="left">vtlAcntNo</td>
-            <td class="right"><%= RES_PARAMS.Item("vtlAcntNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("vtlAcntNo")) %></td>
         </tr>
         <tr>
             <td class="left">expireDt</td>
-            <td class="right"><%= RES_PARAMS.Item("expireDt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("expireDt")) %></td>
         </tr>
         <tr>
             <td class="left">cphoneNo</td>
-            <td class="right"><%= RES_PARAMS.Item("cphoneNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("cphoneNo")) %></td>
         </tr>
         <tr>
             <td class="left">billKey</td>
-            <td class="right"><%= RES_PARAMS.Item("billKey") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("billKey")) %></td>
         </tr>
         <tr>
             <td class="left">csrcAmt</td>
-            <td class="right"><%= RES_PARAMS.Item("csrcAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.Item("csrcAmt")) %></td>
         </tr>
         
 
