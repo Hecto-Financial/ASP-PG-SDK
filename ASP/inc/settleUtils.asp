@@ -31,6 +31,51 @@ End Sub
 '@param connTimeout : resolve, connect, send timeout
 '@param readTimeout : receive timeout
 '@return responseString : JSON from Hecto Financial
+' ============================================================================
+' 자바스크립트 문자열 리터럴 출력용 이스케이프
+'
+' Server.HTMLEncode 는 HTML 본문용이라 <script> 블록 안의 문자열에는 맞지 않습니다.
+' 자바스크립트 문자열 안에 값을 출력할 때는 이 함수를 사용하십시오.
+' ============================================================================
+Function EscapeJs(val)
+    Dim s, i, ch, code, out
+    If IsNull(val) Then
+        EscapeJs = ""
+        Exit Function
+    End If
+    s = CStr(val)
+    out = ""
+    For i = 1 To Len(s)
+        ch = Mid(s, i, 1)
+        code = AscW(ch)
+        Select Case ch
+            Case "\"
+                out = out & "\\"
+            Case """"
+                out = out & "\"""
+            Case "'"
+                out = out & "\u0027"
+            Case "<"
+                out = out & "\u003C"
+            Case ">"
+                out = out & "\u003E"
+            Case "&"
+                out = out & "\u0026"
+            Case vbCr
+                out = out & "\r"
+            Case vbLf
+                out = out & "\n"
+            Case Else
+                If code < 32 Or code = 8232 Or code = 8233 Then
+                    out = out & "\u" & Right("000" & Hex(code), 4)
+                Else
+                    out = out & ch
+                End If
+        End Select
+    Next
+    EscapeJs = out
+End Function
+
 Function sendPost( url, jsonData, connTimeout, readTimeout)
     Dim responseString
     
