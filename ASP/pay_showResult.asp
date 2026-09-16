@@ -59,100 +59,100 @@ Dim csrcAmt : csrcAmt                   = "" & request.Form("respCsrcAmt")      
     <table>
         <tr>
             <td class="left">mchtId[상점아이디]</td>
-            <td class="right"><%= mchtId %></td>
+            <td class="right"><%= Server.HTMLEncode(mchtId) %></td>
         </tr>
         <tr>
             <td class="left">outStatCd[거래상태]</td>
-            <td class="right"><%= outStatCd %></td>
+            <td class="right"><%= Server.HTMLEncode(outStatCd) %></td>
         </tr>
         <tr>
             <td class="left">outRsltCd[거절코드]</td>
-            <td class="right"><%= outRsltCd %></td>
+            <td class="right"><%= Server.HTMLEncode(outRsltCd) %></td>
         </tr>
         <tr>
             <td class="left">outRsltMsg[메세지]</td>
-            <td class="right"><%= outRsltMsg %></td>
+            <td class="right"><%= Server.HTMLEncode(outRsltMsg) %></td>
         </tr>
         <tr>
             <td class="left">method[결제수단]</td>
-            <td class="right"><%= method %></td>
+            <td class="right"><%= Server.HTMLEncode(method) %></td>
         </tr>
         <tr>
             <td class="left">mchtTrdNo[상점주문번호]</td>
-            <td class="right"><%= mchtTrdNo %></td>
+            <td class="right"><%= Server.HTMLEncode(mchtTrdNo) %></td>
         </tr>
         <tr>
             <td class="left">mchtCustId[상점고객아이디]</td>
-            <td class="right"><%= mchtCustId %></td>
+            <td class="right"><%= Server.HTMLEncode(mchtCustId) %></td>
         </tr>
         <tr>
             <td class="left">trdNo[헥토파이낸셜거래번호]</td>
-            <td class="right"><%= trdNo %></td>
+            <td class="right"><%= Server.HTMLEncode(trdNo) %></td>
         </tr>
         <tr>
             <td class="left">trdAmt[거래금액]</td>
-            <td class="right"><%= trdAmt %></td>
+            <td class="right"><%= Server.HTMLEncode(trdAmt) %></td>
         </tr>
         <tr>
             <td class="left">mchtParam[상점예약필드]</td>
-            <td class="right"><%= mchtParam %></td>
+            <td class="right"><%= Server.HTMLEncode(mchtParam) %></td>
         </tr>
 
         <tr>
             <td class="left">authDt[승인일시]</td>
-            <td class="right"><%= authDt %></td>
+            <td class="right"><%= Server.HTMLEncode(authDt) %></td>
         </tr>
         <tr>
             <td class="left">authNo[승인번호]</td>
-            <td class="right"><%= authNo %></td>
+            <td class="right"><%= Server.HTMLEncode(authNo) %></td>
         </tr>
         <tr>
             <td class="left">reqIssueDt[채번요청일시]</td>
-            <td class="right"><%= reqIssueDt %></td>
+            <td class="right"><%= Server.HTMLEncode(reqIssueDt) %></td>
         </tr>
         <tr>
             <td class="left">intMon[할부개월수]</td>
-            <td class="right"><%= intMon %></td>
+            <td class="right"><%= Server.HTMLEncode(intMon) %></td>
         </tr>
         <tr>
             <td class="left">fnNm[카드사명]</td>
-            <td class="right"><%= fnNm %></td>
+            <td class="right"><%= Server.HTMLEncode(fnNm) %></td>
         </tr>
         <tr>
             <td class="left">fnCd[카드사코드]</td>
-            <td class="right"><%= fnCd %></td>
+            <td class="right"><%= Server.HTMLEncode(fnCd) %></td>
         </tr>
         <tr>
             <td class="left">pointTrdNo[포인트거래번호]</td>
-            <td class="right"><%= pointTrdNo %></td>
+            <td class="right"><%= Server.HTMLEncode(pointTrdNo) %></td>
         </tr>
         <tr>
             <td class="left">pointTrdAmt[포인트거래금액]</td>
-            <td class="right"><%= pointTrdAmt %></td>
+            <td class="right"><%= Server.HTMLEncode(pointTrdAmt) %></td>
         </tr>
         <tr>
             <td class="left">cardTrdAmt[신용카드결제금액]</td>
-            <td class="right"><%= cardTrdAmt %></td>
+            <td class="right"><%= Server.HTMLEncode(cardTrdAmt) %></td>
         </tr>
         <tr>
             <td class="left">vtlAcntNo[가상계좌번호]</td>
-            <td class="right"><%= vtlAcntNo %></td>
+            <td class="right"><%= Server.HTMLEncode(vtlAcntNo) %></td>
         </tr>
         <tr>
             <td class="left">expireDt[입금기한]</td>
-            <td class="right"><%= expireDt %></td>
+            <td class="right"><%= Server.HTMLEncode(expireDt) %></td>
         </tr>
         <tr>
             <td class="left">cphoneNo[휴대폰번호]</td>
-            <td class="right"><%= cphoneNo %></td>
+            <td class="right"><%= Server.HTMLEncode(cphoneNo) %></td>
         </tr>
         <tr>
             <td class="left">billKey[자동결제키]</td>
-            <td class="right"><%= billKey %></td>
+            <td class="right"><%= Server.HTMLEncode(billKey) %></td>
         </tr>
         <tr>
             <td class="left">csrcAmt[현금영수증 발급 금액(네이버페이)]</td>
-            <td class="right"><%= csrcAmt %></td>
+            <td class="right"><%= Server.HTMLEncode(csrcAmt) %></td>
         </tr>
         
         <tr>

@@ -212,67 +212,67 @@ On Error GoTo 0
     <table>
         <tr>
             <td class="left">mchtId[상점아이디]</td>
-            <td class="right"><%= RES_PARAMS.params.get("mchtId") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("mchtId")) %></td>
         </tr>
         <tr>
             <td class="left">ver[버전]</td>
-            <td class="right"><%= RES_PARAMS.params.get("ver") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("ver")) %></td>
         </tr>
         <tr>
             <td class="left">method[결제수단]</td>
-            <td class="right"><%= RES_PARAMS.params.get("method") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("method")) %></td>
         </tr>
         <tr>
             <td class="left">bizType[업무구분]</td>
-            <td class="right"><%= RES_PARAMS.params.get("bizType") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("bizType")) %></td>
         </tr>
         <tr>
             <td class="left">encCd[암호화구분]</td>
-            <td class="right"><%= RES_PARAMS.params.get("encCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("encCd")) %></td>
         </tr>
         <tr>
             <td class="left">mchtTrdNo[상점주문번호]</td>
-            <td class="right"><%= RES_PARAMS.params.get("mchtTrdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("mchtTrdNo")) %></td>
         </tr>
         <tr>
             <td class="left">trdNo[헥토파이낸셜 거래번호]</td>
-            <td class="right"><%= RES_PARAMS.params.get("trdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("trdNo")) %></td>
         </tr>
         <tr>
             <td class="left">trdDt[취소요청일자]</td>
-            <td class="right"><%= RES_PARAMS.params.get("trdDt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("trdDt")) %></td>
         </tr>
         <tr>
             <td class="left">trdTm[취소요청시간]</td>
-            <td class="right"><%= RES_PARAMS.params.get("trdTm") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("trdTm")) %></td>
         </tr>
         <tr>
             <td class="left">outStatCd[거래상태코드]</td>
-            <td class="right"><%= RES_PARAMS.params.get("outStatCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("outStatCd")) %></td>
         </tr>
         <tr>
             <td class="left">outRsltCd[거래결과코드]</td>
-            <td class="right"><%= RES_PARAMS.params.get("outRsltCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("outRsltCd")) %></td>
         </tr>
         <tr>
             <td class="left">outRsltMsg[결과메세지]</td>
-            <td class="right"><%= RES_PARAMS.params.get("outRsltMsg") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("outRsltMsg")) %></td>
         </tr>
         <tr>
             <td class="left">pktHash[해쉬값]</td>
-            <td class="right"><%= RES_PARAMS.data.get("pktHash") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("pktHash")) %></td>
         </tr>
         <tr>
             <td class="left">telCo[통신사]</td>
-            <td class="right"><%= RES_PARAMS.data.get("telCo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("telCo")) %></td>
         </tr>
         <tr>
             <td class="left">trdAmt[거래금액]</td>
-            <td class="right"><%= RES_PARAMS.data.get("trdAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("trdAmt")) %></td>
         </tr>
         <tr>
             <td class="left">billKey[자동결제키]</td>
-            <td class="right"><%= RES_PARAMS.data.get("billKey") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("billKey")) %></td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;"><input class="button" type="button" name="button" value="돌아가기" onclick="location.href='pay_form.asp'"></td>

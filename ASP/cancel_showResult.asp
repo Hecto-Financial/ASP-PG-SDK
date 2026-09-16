@@ -242,91 +242,91 @@ On Error GoTo 0
     <table>
         <tr>
             <td class="left">mchtId[상점아이디]</td>
-            <td class="right"><%= RES_PARAMS.params.get("mchtId") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("mchtId")) %></td>
         </tr>
         <tr>
             <td class="left">ver[버전]</td>
-            <td class="right"><%= RES_PARAMS.params.get("ver") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("ver")) %></td>
         </tr>
         <tr>
             <td class="left">method[결제수단]</td>
-            <td class="right"><%= RES_PARAMS.params.get("method") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("method")) %></td>
         </tr>
         <tr>
             <td class="left">bizType[업무구분]</td>
-            <td class="right"><%= RES_PARAMS.params.get("bizType") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("bizType")) %></td>
         </tr>
         <tr>
             <td class="left">encCd[암호화구분]</td>
-            <td class="right"><%= RES_PARAMS.params.get("encCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("encCd")) %></td>
         </tr>
         <tr>
             <td class="left">mchtTrdNo[상점주문번호]</td>
-            <td class="right"><%= RES_PARAMS.params.get("mchtTrdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("mchtTrdNo")) %></td>
         </tr>
         <tr>
             <td class="left">trdNo[헥토파이낸셜 거래번호]</td>
-            <td class="right"><%= RES_PARAMS.params.get("trdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("trdNo")) %></td>
         </tr>
         <tr>
             <td class="left">trdDt[취소요청일자]</td>
-            <td class="right"><%= RES_PARAMS.params.get("trdDt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("trdDt")) %></td>
         </tr>
         <tr>
             <td class="left">trdTm[취소요청시간]</td>
-            <td class="right"><%= RES_PARAMS.params.get("trdTm") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("trdTm")) %></td>
         </tr>
         <tr>
             <td class="left">outStatCd[거래상태코드]</td>
-            <td class="right"><%= RES_PARAMS.params.get("outStatCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("outStatCd")) %></td>
         </tr>
         <tr>
             <td class="left">outRsltCd[거래결과코드]</td>
-            <td class="right"><%= RES_PARAMS.params.get("outRsltCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("outRsltCd")) %></td>
         </tr>
         <tr>
             <td class="left">outRsltMsg[결과메세지]</td>
-            <td class="right"><%= RES_PARAMS.params.get("outRsltMsg") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.params.get("outRsltMsg")) %></td>
         </tr>
         <tr>
             <td class="left">pktHash[해쉬값]</td>
-            <td class="right"><%= RES_PARAMS.data.get("pktHash") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("pktHash")) %></td>
         </tr>
         <tr>
             <td class="left">orgTrdNo[원거래번호]</td>
-            <td class="right"><%= RES_PARAMS.data.get("orgTrdNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("orgTrdNo")) %></td>
         </tr>
         <tr>
             <td class="left">cnclAmt[취소금액]</td>
-            <td class="right"><%= RES_PARAMS.data.get("cnclAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("cnclAmt")) %></td>
         </tr>
         <tr>
             <td class="left">cardCnclAmt[신용카드 취소금액]</td>
-            <td class="right"><%= RES_PARAMS.data.get("cardCnclAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("cardCnclAmt")) %></td>
         </tr>
         <tr>
             <td class="left">pntCnclAmt[포인트 취소금액]</td>
-            <td class="right"><%= RES_PARAMS.data.get("pntCnclAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("pntCnclAmt")) %></td>
         </tr>
         <tr>
             <td class="left">coupCnclAmt[쿠폰 취소금액]</td>
-            <td class="right"><%= RES_PARAMS.data.get("coupCnclAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("coupCnclAmt")) %></td>
         </tr>
         <tr>
             <td class="left">blcAmt[취소 가능 잔액]</td>
-            <td class="right"><%= RES_PARAMS.data.get("blcAmt") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("blcAmt")) %></td>
         </tr>
         <tr>
             <td class="left">acntType[계좌구분]</td>
-            <td class="right"><%= RES_PARAMS.data.get("acntType") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("acntType")) %></td>
         </tr>
         <tr>
             <td class="left">vAcntNo[가상계좌번호]</td>
-            <td class="right"><%= RES_PARAMS.data.get("vAcntNo") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("vAcntNo")) %></td>
         </tr>
         <tr>
             <td class="left">rfdPsblCd[환불가능여부]</td>
-            <td class="right"><%= RES_PARAMS.data.get("rfdPsblCd") %></td>
+            <td class="right"><%= Server.HTMLEncode(RES_PARAMS.data.get("rfdPsblCd")) %></td>
         </tr>
         <tr>
             <td colspan="2" style="text-align: center;"><input class="button" type="button" name="button" value="돌아가기" onclick="location.href='cancel_form.asp'"></td>
