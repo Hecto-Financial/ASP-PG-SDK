@@ -51,6 +51,7 @@ function doAction(){
 </head>
 <body>
 <button onclick="location.href='cardReg_form.asp'">0원 등록(빌키발급) 샘플로</button>
+<button onclick="location.href='delKey_form.asp'">빌키 삭제 샘플로</button>
 <button onclick="location.href='cancel_form.asp'">취소 샘플로</button>
 <h3>전자결제(PG) 신용카드 빌키 결제 API</h3>
 <p>
